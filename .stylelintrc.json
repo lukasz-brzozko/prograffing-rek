@@ -15,9 +15,10 @@
 
   "rules": {
     "at-rule-no-unknown": null,
+    "max-nesting-depth": 2,
     "order/properties-alphabetical-order": null,
     "order/properties-order": [],
-    "plugin/no-low-performance-animation-properties": true,
+    "plugin/no-low-performance-animation-properties": null,
     "plugin/rational-order": [
       true,
       {
@@ -27,5 +28,5 @@
     ],
     "plugin/stylelint-group-selectors": true,
     "scss/at-rule-no-unknown": true
-  }
+      }
 }
