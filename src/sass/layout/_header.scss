@@ -22,14 +22,14 @@ $height: 90px;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 
     &:hover {
-      background-color: c.$tertiary;
-      border-color: c.$tertiary;
+      background-color: c.$quaternary;
+      border-color: c.$quaternary;
     }
   }
 }
 
 .navigation {
-  width: 40%;
+  width: 33%;
 
   &__list {
     display: flex;
@@ -39,12 +39,32 @@ $height: 90px;
   }
 
   &__link {
-    @include m.hover-effect;
-
+    position: relative;
     display: block;
     padding: 0.8em 1em;
     color: c.$text-primary;
     font-size: 1.6rem;
     text-decoration: none;
+
+    &::after {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      display: block;
+      width: calc(100% - 2em);
+      height: 3px;
+      background-color: c.$tertiary;
+      border-radius: 10px;
+      transform: translateX(-50%) rotateY(90deg);
+      transform-origin: 0% 50%;
+      transition: transform 0.2s ease;
+      content: '';
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(-50%) rotateY(0deg);
+      }
+    }
   }
 }
