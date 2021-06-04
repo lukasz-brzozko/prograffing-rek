@@ -2,18 +2,18 @@
 @use '../abstracts/mixins' as m;
 @use '../abstracts/typography' as t;
 
+$height: 90px;
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: $height;
   padding: 2em;
 
   &__logo {
     @include m.hover-effect;
-
-    width: fit-content;
-    cursor: pointer;
   }
 
   &__button {
