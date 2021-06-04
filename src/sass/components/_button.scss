@@ -6,8 +6,16 @@
   width: 140px;
   height: 50px;
   color: c.$text-primary;
+  font-size: 1.4rem;
   font-family: t.$secondary;
   text-transform: uppercase;
+  background-color: c.$tertiary;
+  border-style: none;
   border-radius: 12px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: darken($color: c.$tertiary, $amount: 5%);
+  }
 }
