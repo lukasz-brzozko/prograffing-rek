@@ -2,6 +2,7 @@
 @use '../sass/abstracts/colors' as c;
 @use '../sass/abstracts/typography' as t;
 @use '../sass/components';
+@use '../sass/layout';
 
 * {
   box-sizing: border-box;
