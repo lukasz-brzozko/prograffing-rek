@@ -1,0 +1,13 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/typography' as t;
+
+.button {
+  width: 140px;
+  height: 50px;
+  color: c.$text-primary;
+  font-family: t.$secondary;
+  text-transform: uppercase;
+  border-radius: 12px;
+  cursor: pointer;
+}
