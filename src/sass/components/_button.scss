@@ -3,8 +3,9 @@
 @use '../abstracts/typography' as t;
 
 .button {
-  width: 140px;
+  width: 155px;
   height: 50px;
+  padding: 0 1em;
   color: c.$text-primary;
   font-size: 1.4rem;
   font-family: t.$secondary;
