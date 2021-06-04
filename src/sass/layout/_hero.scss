@@ -1,0 +1,39 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/typography' as t;
+@use './header';
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - #{header.$height});
+  color: c.$text-primary;
+
+  &__headline,
+  &__description {
+    color: adjust-color($color:c.$text-primary, $alpha: -0.5);
+    font-size: 1.6rem;
+  }
+
+  &__description {
+    margin-bottom: 2em;
+    line-height: 2;
+  }
+
+  &__headline {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0.3em 0;
+    font-size: 7.2rem;
+    font-family: t.$secondary;
+  }
+
+  &__text-container {
+    width: 50%;
+    max-width: 485px;
+  }
+}
