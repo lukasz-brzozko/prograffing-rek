@@ -36,7 +36,58 @@
     }
   }
 
+  &__numbers {
+    width: 100%;
+
+    &-data {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 5em 0;
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-description {
+      color: adjust-color($color: c.$text-secondary, $alpha: -0.5);
+      font-size: 1.4rem;
+    }
+
+    &-title {
+      margin: 0.5em 0;
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+
+    &-value {
+      font-size: 5.6rem;
+      font-family: t.$secondary;
+    }
+  }
+
+  &__subtitle {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-family: t.$secondary;
+    text-align: center;
+  }
+
   &__title {
     max-width: 400px;
+  }
+
+  &__wrapper {
+    flex-direction: column;
+    // testing
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    //
   }
 }
