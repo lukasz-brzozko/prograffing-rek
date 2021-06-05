@@ -24,12 +24,15 @@ const observerTarget = document.querySelector(DATA_NUMBERS_SELECTOR);
 
 const animate = ({ id, number, ...options }) => new CountUp(id, number, options).start();
 
-const checkIsIntersecting = (entry) => {
-  if (entry.isIntersecting) DATA_NUMBERS.forEach(animate);
+const checkIsIntersecting = (entry, observer) => {
+  if (entry.isIntersecting) {
+    DATA_NUMBERS.forEach(animate);
+    observer.unobserve(observerTarget);
+  }
 };
 
-const observerClb = (entries) => {
-  entries.forEach(checkIsIntersecting);
+const observerClb = (entries, observer) => {
+  entries.forEach((entry) => checkIsIntersecting(entry, observer));
 };
 
 const createObserver = () => {
