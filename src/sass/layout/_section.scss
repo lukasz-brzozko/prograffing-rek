@@ -74,6 +74,19 @@
   &__text-container {
     width: 50%;
     max-width: 485px;
+
+    &--centered {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+
+      .title {
+        margin-right: auto;
+        margin-bottom: 0.25em;
+        margin-left: auto;
+      }
+    }
   }
 
   &__title {
