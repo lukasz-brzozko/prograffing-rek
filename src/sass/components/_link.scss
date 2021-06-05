@@ -1,0 +1,6 @@
+@use '../abstracts/colors' as c;
+
+.link {
+  color: c.$text-secondary;
+  text-decoration: none;
+}
