@@ -84,6 +84,12 @@
       font-size: 7.2rem;
       background-color: c.$quaternary;
       border-radius: 50%;
+      transition: transform 0.3s ease;
+      user-select: none;
+
+      &:hover {
+        transform: translateY(-10%);
+      }
     }
 
     &-wrapper {
