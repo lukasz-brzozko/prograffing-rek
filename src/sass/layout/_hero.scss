@@ -10,8 +10,8 @@
   height: calc(100vh - #{header.$height});
   color: c.$text-primary;
 
-  &__headline,
-  &__description {
+  &__description,
+  &__headline {
     color: adjust-color($color:c.$text-primary, $alpha: -0.5);
     font-size: 1.6rem;
   }

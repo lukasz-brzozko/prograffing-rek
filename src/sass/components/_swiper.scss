@@ -1,0 +1,39 @@
+@use '../abstracts/colors' as c;
+
+:root {
+  --swiper-navigation-color: c.$text-primary;
+  --swiper-navigation-size: 1.6rem !important;
+}
+
+.swiper-slide {
+  padding: 0 10%;
+}
+
+.swiper-button {
+  &-next {
+    right: 3% !important;
+  }
+
+  &-prev {
+    left: 3% !important;
+  }
+
+  &-next,
+  &-prev {
+    top: 35% !important;
+    width: 48px !important;
+    height: 48px !important;
+    font-weight: bold;
+    border: 1px solid adjust-color($color: c.$text-primary, $alpha: -0.7);
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: c.$text-primary;
+
+      &::after {
+        color: c.$text-secondary;
+      }
+    }
+  }
+}

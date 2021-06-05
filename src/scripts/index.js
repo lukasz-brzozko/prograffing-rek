@@ -1,7 +1,4 @@
 import '../styles/index.scss';
+import swiper from './swiper';
 
-if (process.env.NODE_ENV === 'development') {
-  require('../index.html');
-}
-
-console.log('webpack starterkit');
+console.log(swiper);
