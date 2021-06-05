@@ -1,0 +1,42 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/typography' as t;
+
+.about {
+  min-height: 100vh;
+
+  &__description {
+    margin-bottom: 2.5em;
+  }
+
+  &__image {
+    &--employee {
+      z-index: 1;
+      transform: translate(82%, 66%);
+    }
+
+    &--note {
+      z-index: 3;
+      transform: translate(-123%, -179%);
+    }
+
+    &--ship-img {
+      z-index: 2;
+      transform: translate(-50%, -50%);
+    }
+
+    &--ship {
+      z-index: 1;
+      transform: translate(37%, -154%);
+    }
+
+    &--track-one {
+      z-index: 1;
+      transform: translate(-77%, -4%);
+    }
+  }
+
+  &__title {
+    max-width: 400px;
+  }
+}
