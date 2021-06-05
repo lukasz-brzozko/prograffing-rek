@@ -3,6 +3,8 @@ $primary-lighter: #302f4a;
 $secondary: #fff;
 $tertiary: #0666f6;
 $quaternary: #ed7171;
+$light: #e6f0ff;
 
-$text-primary: #fff;
-$text-secondary: #000;
+$text-primary: $secondary;
+$text-secondary: #4d5163;
+$text-tertiary: $tertiary;
