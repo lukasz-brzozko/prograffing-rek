@@ -13,57 +13,13 @@
   &__description,
   &__headline {
     color: adjust-color($color:c.$text-primary, $alpha: -0.5);
-    font-size: 1.6rem;
-  }
-
-  &__description {
-    margin-bottom: 2em;
-    line-height: 2;
-  }
-
-  &__headline {
-    letter-spacing: 3px;
-    text-transform: uppercase;
   }
 
   &__title {
-    margin: 0.5em 0;
     font-size: 7.2rem;
-    font-family: t.$secondary;
-    line-height: 1.1;
-  }
-
-  &__picture-container {
-    position: relative;
-    width: 50%;
-    height: 500px;
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: -1;
-      width: 50vw;
-      max-width: 500px;
-      height: 50vw;
-      max-height: 500px;
-      background-color: c.$primary-lighter;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      content: '';
-    }
-  }
-
-  &__text-container {
-    width: 50%;
-    max-width: 485px;
   }
 
   &__image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
     &--letters {
       z-index: 1;
       transform: translate(-125%, 57%);
