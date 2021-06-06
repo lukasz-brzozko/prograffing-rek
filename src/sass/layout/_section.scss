@@ -1,6 +1,7 @@
 @use '../abstracts/colors' as c;
 @use '../abstracts/mixins' as m;
 @use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
 
 .section {
   &--light {
@@ -54,9 +55,9 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 50vw;
+      width: v.$img-container-width;
       max-width: 500px;
-      height: 50vw;
+      height: v.$img-container-width;
       max-height: 500px;
       background-color: c.$primary-lighter;
       border-radius: 50%;
