@@ -4,7 +4,7 @@
 @use '../abstracts/variables' as v;
 
 .service {
-  margin: 20em 0;
+  padding-bottom: 20em;
 
   &__predescription,
   &__title {
@@ -50,11 +50,11 @@
     }
 
     &--track-one {
-      transform: translate(-114%, -111%);
+      transform: translate(-114%, -107%);
     }
 
     &--truck-img {
-      transform: translate(10%, -126%);
+      transform: translate(1%, -117%);
     }
   }
 
