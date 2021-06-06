@@ -1,22 +1,28 @@
-@use '../abstracts/colors' as c;
-@use '../abstracts/mixins' as m;
-@use '../abstracts/typography' as t;
+@use '../abstracts' as a;
 
 .button {
   width: 155px;
   height: 50px;
   padding: 0 1em;
-  color: c.$text-primary;
+  color: a.$c-text-primary;
   font-size: 1.4rem;
-  font-family: t.$secondary;
+  font-family: a.$t-secondary;
   text-transform: uppercase;
-  background-color: c.$tertiary;
+  background-color: a.$c-tertiary;
   border-style: none;
   border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: darken($color: c.$tertiary, $amount: 5%);
+    background-color: darken($color: a.$c-tertiary, $amount: 5%);
+  }
+
+  &--alternate {
+    background-color: a.$c-quaternary;
+
+    &:hover {
+      background-color: darken($color: a.$c-quaternary, $amount: 5%);
+    }
   }
 }
