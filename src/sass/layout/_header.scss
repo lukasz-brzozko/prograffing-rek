@@ -41,8 +41,8 @@ $height: 90px;
   &__link {
     position: relative;
     display: block;
+    width: fit-content;
     padding: 0.8em 1em;
-    color: c.$text-primary;
     font-size: 1.6rem;
 
     &::after {
