@@ -1,0 +1,64 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/typography' as t;
+@use '../abstracts/variables' as v;
+
+.service {
+  margin: 20em 0;
+
+  &__predescription,
+  &__title {
+    color: c.$text-primary;
+  }
+
+  &__image {
+    display: block;
+    // width: 25vw;
+    // max-width: 100%;
+
+    &-container {
+      z-index: 2;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: v.$img-container-width / 2;
+      max-width: 270px;
+      height: v.$img-container-width / 2;
+      max-height: 270px;
+      padding: 0 2em;
+      background-color: c.$quaternary;
+      border-radius: 10%;
+      transform: translate(-69%, -42%);
+    }
+
+    &--airplane {
+      transform: translate(-158%, 14%);
+    }
+
+    &--courier {
+      width: 100%;
+    }
+
+    &--delivery {
+      z-index: 3;
+      max-width: 120px;
+      transform: translate(-205%, -158%);
+    }
+
+    &--ship-img {
+      transform: translate(1%, 28%);
+    }
+
+    &--track-one {
+      transform: translate(-114%, -111%);
+    }
+
+    &--truck-img {
+      transform: translate(10%, -126%);
+    }
+  }
+
+  &__more-link {
+    font-size: 2rem;
+  }
+}
