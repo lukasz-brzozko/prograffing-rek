@@ -1,0 +1,17 @@
+@use '../abstracts/' as a;
+
+.blockquote {
+  &__cite {
+    margin: 2em 0;
+    color: adjust-color($color: a.$c-text-secondary, $alpha: -0.5);
+    font-size: 1.6rem;
+    line-height: 2;
+
+    &--strong {
+      color: a.$c-text-secondary;
+      font-weight: bold;
+      font-size: 2.4rem;
+      line-height: 1.3;
+    }
+  }
+}
