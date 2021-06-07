@@ -1,9 +1,9 @@
-@use '../abstracts/' as a;
+@use '../abstracts' as a;
 
 .blockquote {
   &__cite {
     margin: 2em 0;
-    color: adjust-color($color: a.$c-text-secondary, $alpha: -0.5);
+    color: a.$c-text-secondary-lighter;
     font-size: 1.6rem;
     line-height: 2;
 

@@ -1,6 +1,5 @@
-@use '../abstracts/colors' as c;
+@use '../abstracts' as a;
 @use '../abstracts/mixins' as m;
-@use '../abstracts/typography' as t;
 
 $height: 90px;
 
@@ -18,12 +17,12 @@ $height: 90px;
 
   &__button {
     background-color: transparent;
-    border: 1px solid adjust-color($color: c.$text-primary, $alpha: -0.7);
+    border: 1px solid a.$c-text-primary-lighter;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 
     &:hover {
-      background-color: c.$quaternary;
-      border-color: c.$quaternary;
+      background-color: a.$c-quaternary;
+      border-color: a.$c-quaternary;
     }
   }
 }
@@ -52,7 +51,7 @@ $height: 90px;
       display: block;
       width: calc(100% - 2em);
       height: 3px;
-      background-color: c.$tertiary;
+      background-color: a.$c-tertiary;
       border-radius: 10px;
       transform: translateX(-50%) rotateY(90deg);
       transform-origin: 0% 50%;

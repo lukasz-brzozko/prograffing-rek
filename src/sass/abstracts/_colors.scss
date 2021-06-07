@@ -6,5 +6,9 @@ $quaternary: #ed7171;
 $light: #e6f0ff;
 
 $text-primary: $secondary;
+$text-primary-lighter: adjust-color($color: $text-primary, $alpha: -0.7);
 $text-secondary: #4d5163;
+$text-secondary-lighter: adjust-color($color: $text-secondary, $alpha: -0.5);
 $text-tertiary: $tertiary;
+
+$headline-primary-lighter: adjust-color($color: $text-primary, $alpha: -0.5);

@@ -17,7 +17,7 @@ $divider: 1.2;
       display: block;
       width: fit-content;
       margin: 0.5em 0 1em;
-      color: adjust-color($color: a.$c-text-secondary, $alpha: -0.5);
+      color: a.$c-text-secondary-lighter;
       font-size: 1.6rem;
     }
   }

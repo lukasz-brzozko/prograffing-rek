@@ -1,6 +1,4 @@
-@use '../abstracts/colors' as c;
-@use '../abstracts/mixins' as m;
-@use '../abstracts/typography' as t;
+@use '../abstracts' as a;
 @use './header';
 
 .hero {
@@ -9,11 +7,11 @@
   justify-content: center;
   height: calc(100vh - #{header.$height});
   min-height: auto;
-  color: c.$text-primary;
+  color: a.$c-text-primary;
 
   &__description,
   &__headline {
-    color: adjust-color($color:c.$text-primary, $alpha: -0.5);
+    color: a.$c-headline-primary-lighter;
   }
 
   &__title {

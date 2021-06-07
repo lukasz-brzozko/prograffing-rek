@@ -1,7 +1,4 @@
-@use '../abstracts/colors' as c;
-@use '../abstracts/mixins' as m;
-@use '../abstracts/typography' as t;
-@use '../abstracts/variables' as v;
+@use '../abstracts' as a;
 
 $wrapper-width: 81%;
 
@@ -10,20 +7,20 @@ $wrapper-width: 81%;
   overflow: hidden;
 
   &--light {
-    color: c.$text-secondary;
-    background-color: c.$secondary;
+    color: a.$c-text-secondary;
+    background-color: a.$c-secondary;
 
     .description {
-      color: adjust-color($color: c.$text-secondary, $alpha: -0.5);
+      color: a.$c-text-secondary-lighter;
     }
 
     .headline {
-      color: c.$text-tertiary;
+      color: a.$c-text-tertiary;
     }
 
     .picture-container {
       &::before {
-        background-color: c.$light;
+        background-color: a.$c-light;
       }
     }
   }
@@ -42,7 +39,7 @@ $wrapper-width: 81%;
 
   &__description,
   &__headline {
-    color: adjust-color($color:c.$text-primary, $alpha: -0.5);
+    color: a.$c-headline-primary-lighter;
     font-size: 1.6rem;
   }
 
@@ -61,11 +58,11 @@ $wrapper-width: 81%;
       position: absolute;
       top: 50%;
       left: 50%;
-      width: v.$img-container-width;
+      width: a.$v-img-container-width;
       max-width: 500px;
-      height: v.$img-container-width;
+      height: a.$v-img-container-width;
       max-height: 500px;
-      background-color: c.$primary-lighter;
+      background-color: a.$c-primary-lighter;
       border-radius: 50%;
       transform: translate(-50%, -50%);
       content: '';
@@ -103,7 +100,7 @@ $wrapper-width: 81%;
   &__title {
     margin: 0.5em 0;
     font-size: 5.6rem;
-    font-family: t.$secondary;
+    font-family: a.$t-secondary;
     line-height: 1.1;
     letter-spacing: -2px;
     text-transform: capitalize;
