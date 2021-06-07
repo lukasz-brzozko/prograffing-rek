@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - #{header.$height});
+  min-height: auto;
   color: c.$text-primary;
 
   &__description,
