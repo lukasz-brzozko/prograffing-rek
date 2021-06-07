@@ -1,0 +1,73 @@
+@use '../abstracts' as a;
+
+$box-shadow-width: 9px;
+$divider: 1.2;
+
+.our-team {
+  &__figure {
+    width: 60%;
+    margin-left: 8%;
+  }
+
+  &__figcaption {
+    font-size: 2rem;
+    line-height: 1.5;
+
+    &-profession {
+      display: block;
+      width: fit-content;
+      margin: 0.5em 0 1em;
+      color: adjust-color($color: a.$c-text-secondary, $alpha: -0.5);
+      font-size: 1.6rem;
+    }
+  }
+
+  &__cover-content {
+    height: auto;
+  }
+
+  &__description {
+    max-width: 600px;
+  }
+
+  &__image,
+  &__picture-container {
+    max-width: 420px;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow:
+      ($box-shadow-width * 1) 0 0 a.$c-tertiary,
+      ($box-shadow-width * 2) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.55),
+      ($box-shadow-width * 3) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.7),
+      ($box-shadow-width * 4) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.75);
+    transform: translate(-50%, -50%);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow:
+        (($box-shadow-width * 1) / $divider) 0 0 a.$c-tertiary,
+        (($box-shadow-width * 2) / $divider) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.55),
+        (($box-shadow-width * 3) / $divider) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.7),
+        (($box-shadow-width * 4) / $divider) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.75);
+    }
+  }
+
+  &__picture-container {
+    width: 45%;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &__text-container {
+    max-width: 800px;
+  }
+
+  &__wrapper {
+    flex-direction: column;
+  }
+}
