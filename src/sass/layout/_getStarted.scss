@@ -37,7 +37,7 @@ $width: 98%;
   &__button {
     width: 170px;
 
-    &:hover + .get-started__image .get-started__image-path {
+    @at-root &:hover + .get-started__image .get-started__image-path {
       stroke-dashoffset: 1000;
     }
   }
