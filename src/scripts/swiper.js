@@ -1,18 +1,38 @@
 // import Swiper from 'swiper';
-import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
+import SwiperCore, {
+  Autoplay, EffectFade, Navigation,
+} from 'swiper/core';
 import 'swiper/swiper-bundle.css';
 
-SwiperCore.use([Navigation, Autoplay]);
+SwiperCore.use([Autoplay, EffectFade, Navigation]);
 
-const swiper = new SwiperCore('.swiper-container', {
-  spaceBetween: 200,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+const heroSwiper = new SwiperCore('.hero__swiper-container', {
   autoplay: {
     delay: 5000,
   },
+  loop: true,
+  navigation: {
+    nextEl: '.hero__swiper-button-next',
+    prevEl: '.hero__swiper-button-prev',
+  },
+  spaceBetween: 200,
 });
 
-export default swiper;
+const teamSwiper = new SwiperCore('.our-team__swiper-container', {
+  slideClass: 'our-team__swiper-slide',
+  loop: true,
+  speed: 500,
+  noSwipingSelector: '.our-team__swiper-container',
+  noSwiping: true,
+  preventClicks: false,
+  preventClicksPropagation: false,
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+  navigation: {
+    nextEl: '.our-team__swiper-button-next',
+    prevEl: '.our-team__swiper-button-prev',
+  },
+  spaceBetween: 0,
+});
+
+console.log(heroSwiper, teamSwiper);

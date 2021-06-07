@@ -10,23 +10,18 @@
 }
 
 .swiper-button {
-  &-next {
-    right: 3% !important;
-  }
-
-  &-prev {
-    left: 3% !important;
-  }
-
   &-next,
   &-prev {
-    top: 35% !important;
     width: 48px !important;
     height: 48px !important;
     font-weight: bold;
     border: 1px solid a.$c-text-primary-lighter;
     border-radius: 50%;
     transition: background-color 0.2s ease;
+
+    &::after {
+      transition: color 0.2s ease;
+    }
 
     &:hover {
       background-color: a.$c-text-primary;

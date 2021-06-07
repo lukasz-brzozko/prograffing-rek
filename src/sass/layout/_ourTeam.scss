@@ -1,12 +1,13 @@
 @use '../abstracts' as a;
 
 $box-shadow-width: 9px;
-$divider: 1.2;
+$multiplier: 0.9;
 
 .our-team {
   &__figure {
     width: 60%;
-    margin-left: 8%;
+    max-width: 900px;
+    margin-left: 6vw;
   }
 
   &__figcaption {
@@ -23,6 +24,8 @@ $divider: 1.2;
   }
 
   &__cover-content {
+    align-items: flex-start;
+    justify-content: flex-end;
     height: auto;
   }
 
@@ -33,6 +36,7 @@ $divider: 1.2;
   &__image,
   &__picture-container {
     max-width: 420px;
+    max-height: 400px;
   }
 
   &__image {
@@ -48,10 +52,10 @@ $divider: 1.2;
 
     &:hover {
       box-shadow:
-        (($box-shadow-width * 1) / $divider) 0 0 a.$c-tertiary,
-        (($box-shadow-width * 2) / $divider) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.55),
-        (($box-shadow-width * 3) / $divider) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.7),
-        (($box-shadow-width * 4) / $divider) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.75);
+        (($box-shadow-width * 1) * $multiplier) 0 0 a.$c-tertiary,
+        (($box-shadow-width * 2) * $multiplier) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.55),
+        (($box-shadow-width * 3) * $multiplier) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.7),
+        (($box-shadow-width * 4) * $multiplier) 0 0 adjust-color($color: a.$c-tertiary, $alpha: -0.75);
     }
   }
 
@@ -61,6 +65,49 @@ $divider: 1.2;
     &::before {
       content: none;
     }
+  }
+
+  &__swiper-button {
+    &-next {
+      transform: translateX(120%);
+    }
+
+    &-next,
+    &-prev {
+      top: auto;
+      bottom: 2.5em;
+      left: calc(420px + 6vw + 10vw);
+      z-index: 1 !important;
+      border: solid 1px adjust-color($color: a.$c-tertiary, $alpha: -0.7);
+      opacity: 1 !important;
+
+      &:hover {
+        background-color: a.$c-tertiary;
+      }
+
+      &::after {
+        color: a.$c-tertiary;
+      }
+
+      &:hover::after {
+        color: a.$c-text-primary;
+      }
+    }
+  }
+
+  &__swiper-wrapper {
+    display: flex;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  &__swiper-slide {
+    display: block;
+    flex-shrink: 0;
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    padding: 0 10vw;
   }
 
   &__text-container {

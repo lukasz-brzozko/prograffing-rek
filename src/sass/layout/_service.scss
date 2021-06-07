@@ -21,9 +21,9 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      width: v.$img-container-width / 2;
+      width: v.$img-container-width * 0.5;
       max-width: 270px;
-      height: v.$img-container-width / 2;
+      height: v.$img-container-width * 0.5;
       max-height: 270px;
       padding: 0 2em;
       background-color: c.$quaternary;
