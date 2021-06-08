@@ -1,0 +1,45 @@
+@use '../abstracts' as a;
+
+.questions {
+  &__question {
+    margin-top: -1em !important;
+    border-style: none;
+  }
+
+  &__answer,
+  &__summary {
+    color: a.$c-text-secondary !important;
+    font-family: a.$t-primary !important;
+  }
+
+  &__answer {
+    margin-bottom: 1em !important;
+    padding: 2em !important;
+    font-size: 1.6rem !important;
+    line-height: 2 !important;
+    background-color: a.$c-light;
+    border-radius: 24px;
+  }
+
+  &__summary {
+    display: flex !important;
+    justify-content: flex-start;
+    margin-bottom: 0.75em !important;
+    font-weight: bold;
+    font-size: 2.4rem !important;
+    text-transform: capitalize;
+
+    &::after {
+      position: static !important;
+      top: auto !important;
+      right: auto !important;
+      margin-left: 5px;
+      transform: translate(0, 0) !important;
+      content: '>' !important;
+    }
+
+    &:focus {
+      color: inherit !important;
+    }
+  }
+}

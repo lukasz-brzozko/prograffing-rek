@@ -1,0 +1,22 @@
+@use '../abstracts' as a;
+
+.faq {
+  background-color: a.$c-primary;
+
+  &__text-container {
+    max-width: 570px;
+    margin-top: 15em;
+  }
+
+  &__questions {
+    width: 100%;
+    max-width: 770px;
+  }
+
+  &__wrapper {
+    flex-direction: column;
+    width: 98%;
+    background-color: a.$c-secondary;
+    border-radius: 32px;
+  }
+}
