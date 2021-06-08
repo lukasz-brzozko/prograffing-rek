@@ -32,3 +32,8 @@
     }
   }
 }
+
+.swiper-container-fade .swiper-slide-active,
+.swiper-container-fade .swiper-slide-active .swiper-slide-active {
+  z-index: 1;
+}

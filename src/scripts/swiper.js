@@ -24,8 +24,6 @@ const teamSwiper = new SwiperCore('.our-team__swiper-container', {
   speed: 500,
   noSwipingSelector: '.our-team__swiper-container',
   noSwiping: true,
-  preventClicks: false,
-  preventClicksPropagation: false,
   effect: 'fade',
   fadeEffect: { crossFade: true },
   navigation: {

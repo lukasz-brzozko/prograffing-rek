@@ -77,9 +77,7 @@ $multiplier: 0.9;
       top: auto;
       bottom: 2.5em;
       left: calc(420px + 6vw + 10vw);
-      z-index: 1 !important;
       border: solid 1px adjust-color($color: a.$c-tertiary, $alpha: -0.7);
-      opacity: 1 !important;
 
       &:hover {
         background-color: a.$c-tertiary;
