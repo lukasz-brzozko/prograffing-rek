@@ -1,0 +1,86 @@
+@use '../abstracts' as a;
+
+$border-radius: 32px;
+
+.pricing {
+  &__description,
+  &__title {
+    color: a.$c-text-primary;
+  }
+
+  &__description {
+    font-size: 2rem;
+  }
+
+  &__image {
+    &--track-one {
+      transform: translate(-54%, -52%);
+    }
+  }
+
+  &__panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 385px;
+    padding: 4em 0;
+    color: a.$c-text-secondary;
+    background-color: a.$c-secondary;
+    border-radius: $border-radius;
+    transform: translate(-50%, -50%);
+
+    &-description {
+      margin-top: 0.5em;
+      font-size: 2rem;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 95%;
+      height: 50%;
+      background-color: a.$c-light;
+      border-radius: $border-radius * 0.5;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-title {
+      align-self: flex-start;
+      margin-left: 10%;
+      font-weight: bold;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__picture-container {
+    &::before {
+      width: 20vw;
+      max-width: 250px;
+      height: 20vw;
+      max-height: 250px;
+      transform: translate(-115%, -101%);
+    }
+
+    &::after {
+      width: 30vw;
+      max-width: 350px;
+      height: 30vw;
+      max-height: 350px;
+      transform: translate(-13%, -17%);
+      content: '';
+    }
+  }
+}
