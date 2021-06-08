@@ -114,7 +114,12 @@ $multiplier: 0.9;
     max-width: 800px;
   }
 
+  &__title.title {
+    margin-bottom: 0;
+  }
+
   &__wrapper {
     flex-direction: column;
+    padding: 8em 0 6em;
   }
 }
