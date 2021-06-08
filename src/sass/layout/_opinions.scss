@@ -1,0 +1,93 @@
+@use '../abstracts' as a;
+
+.opinions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: a.$c-text-primary;
+
+  &__figure {
+    max-width: 770px;
+  }
+
+  &__blockquote-cite {
+    color: a.$c-text-primary;
+
+    &--strong {
+      position: relative;
+      font-weight: normal;
+      font-size: 4rem;
+      font-family: a.$t-secondary;
+      letter-spacing: -1px;
+
+      &::before {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        font-size: 7.2rem;
+        content: '"';
+      }
+
+      &:hover::before {
+        animation: bounce 0.7s;
+      }
+    }
+  }
+
+  &__figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-avatar {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      overflow: hidden;
+      background-color: a.$c-quaternary;
+      border-radius: 50%;
+    }
+
+    &-name,
+    &-profession {
+      display: block;
+    }
+
+    &-name {
+      margin-bottom: 0.75em;
+      font-size: 2.4rem;
+    }
+
+    &-profession {
+      color: a.$c-headline-primary-lighter;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  70%,
+  100% {
+    transform: rotateX(0) translateY(0);
+    transform: rotateX(0) translateY(0);
+  }
+
+  10% {
+    transform: rotateX(45deg) translateY(0);
+    transform: rotateX(45deg) translateY(0);
+  }
+
+  30% {
+    transform: rotateX(0) translateY(-20px);
+    transform: rotateX(0) translateY(-20px);
+  }
+
+  50% {
+    transform: rotateX(45deg) translateY(0);
+    transform: rotateX(45deg) translateY(0);
+  }
+}
