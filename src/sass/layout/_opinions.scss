@@ -25,11 +25,12 @@
         bottom: 100%;
         left: 0;
         font-size: 7.2rem;
+        transform: rotateX(0) translateY(0);
         content: '"';
       }
 
       &:hover::before {
-        animation: bounce 0.7s;
+        animation: bounce 0.7s both;
       }
     }
   }
