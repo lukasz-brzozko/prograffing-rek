@@ -23,6 +23,7 @@
 
   &__summary {
     display: flex !important;
+    align-items: center;
     justify-content: flex-start;
     margin-bottom: 0.75em !important;
     font-weight: bold;
@@ -33,9 +34,10 @@
       position: static !important;
       top: auto !important;
       right: auto !important;
-      margin-left: 5px;
+      width: auto !important;
+      margin-left: 12px;
       transform: translate(0, 0) !important;
-      content: '>' !important;
+      content: url('/src/assets/svg/strzalka.svg') !important;
     }
 
     &:focus {
