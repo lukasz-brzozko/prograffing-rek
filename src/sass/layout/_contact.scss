@@ -6,6 +6,10 @@
       margin-top: 2em;
     }
 
+    &-element-image-path {
+      transition: fill 0.2s ease, stroke 0.2s ease;
+    }
+
     &-element-text {
       margin-left: 25px;
     }
@@ -16,7 +20,7 @@
       justify-content: flex-start;
       font-size: 2rem;
 
-      @at-root &:hover .contact__address-element-image circle {
+      @at-root &:hover .contact__address-element-image-path {
         fill: a.$c-tertiary;
         stroke: a.$c-tertiary;
       }
