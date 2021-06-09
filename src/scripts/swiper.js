@@ -33,4 +33,17 @@ const teamSwiper = new SwiperCore('.our-team__swiper-container', {
   spaceBetween: 0,
 });
 
-console.log(heroSwiper, teamSwiper);
+const faqSwiper = new SwiperCore('.faq__swiper-container', {
+  slideClass: 'faq__swiper-slide',
+  noSwiping: true,
+  noSwipingClass: 'faq__swiper-container',
+  loop: true,
+  navigation: {
+    nextEl: '.faq__swiper-button-next',
+    prevEl: '.faq__swiper-button-prev',
+  },
+  slidesPerView: 4,
+
+});
+
+console.log(heroSwiper, teamSwiper, faqSwiper);
