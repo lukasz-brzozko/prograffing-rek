@@ -1,0 +1,60 @@
+@use '../abstracts' as a;
+
+.contact {
+  &__address {
+    &-element {
+      margin-top: 2em;
+    }
+
+    &-element-text {
+      margin-left: 25px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 2rem;
+
+      @at-root &:hover .contact__address-element-image circle {
+        fill: a.$c-tertiary;
+        stroke: a.$c-tertiary;
+      }
+    }
+  }
+
+  &__description {
+    color: a.$c-text-primary;
+    font-size: 2rem;
+  }
+
+  &__image {
+    &--map {
+      width: 43vw;
+      max-width: 570px;
+      transform: translate(-50%, -50%);
+    }
+
+    &--marker {
+      transform: translate(-50%, -100%);
+      animation: float 1s ease-in-out infinite both;
+    }
+  }
+
+  &__picture-container {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(-50%, -100%);
+  }
+
+  50% {
+    transform: translate(-50%, -110%);
+  }
+}
