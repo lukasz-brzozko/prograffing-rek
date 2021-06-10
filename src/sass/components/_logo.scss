@@ -1,0 +1,9 @@
+@use '../abstracts/mixins' as m;
+
+.logo {
+  @include m.hover-effect;
+
+  &__image {
+    max-width: 80px;
+  }
+}
