@@ -7,6 +7,10 @@
 
 .swiper-slide {
   padding: 0 10%;
+
+  @include a.m-media(sm) {
+    padding: 0 3vw;
+  }
 }
 
 .swiper-button {

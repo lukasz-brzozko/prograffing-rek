@@ -3,6 +3,12 @@
 $border-radius: 32px;
 
 .pricing {
+  &__button {
+    @include a.m-media(sm) {
+      width: 100%;
+    }
+  }
+
   &__description,
   &__title {
     color: a.$c-text-primary;

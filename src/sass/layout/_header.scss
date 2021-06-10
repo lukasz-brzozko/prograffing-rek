@@ -9,6 +9,10 @@ $height: 90px;
   width: 100%;
   height: $height;
   padding: 2em;
+
+  @include a.m-media(sm) {
+    display: none;
+  }
 }
 
 .navigation {

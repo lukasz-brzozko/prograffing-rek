@@ -8,6 +8,10 @@
 
   &__figure {
     max-width: 770px;
+
+    @include a.m-media(sm) {
+      margin-top: 20em;
+    }
   }
 
   &__blockquote-cite {
@@ -19,6 +23,11 @@
       font-size: 4rem;
       font-family: a.$t-secondary;
       letter-spacing: -1px;
+
+      @include a.m-media(sm) {
+        font-size: 2.6rem;
+        text-align: justify;
+      }
 
       &::before {
         position: absolute;
@@ -40,6 +49,10 @@
     align-items: center;
     justify-content: flex-start;
 
+    @include a.m-media(sm) {
+      flex-direction: column;
+    }
+
     &-avatar {
       display: flex;
       align-items: flex-end;
@@ -50,6 +63,10 @@
       overflow: hidden;
       background-color: a.$c-quaternary;
       border-radius: 50%;
+
+      @include a.m-media(sm) {
+        margin-bottom: 3em;
+      }
     }
 
     &-name,

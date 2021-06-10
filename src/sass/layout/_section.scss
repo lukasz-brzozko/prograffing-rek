@@ -6,6 +6,10 @@ $wrapper-width: 81%;
   min-height: 100vh;
   overflow: hidden;
 
+  @include a.m-media(sm) {
+    text-align: center;
+  }
+
   &--light {
     color: a.$c-text-secondary;
     background-color: a.$c-secondary;
@@ -46,6 +50,10 @@ $wrapper-width: 81%;
   &__description {
     margin-bottom: 2em;
     line-height: 2;
+
+    @include a.m-media(sm) {
+      text-align: justify;
+    }
   }
 
   &__headline {
@@ -54,6 +62,10 @@ $wrapper-width: 81%;
   }
 
   &__picture-container {
+    @include a.m-media(sm) {
+      display: none;
+    }
+
     &::before,
     &::after {
       position: absolute;
@@ -77,11 +89,20 @@ $wrapper-width: 81%;
     margin-bottom: 1em;
     font-size: 2rem;
     line-height: 1.6;
+
+    @include a.m-media(sm) {
+      text-align: justify;
+    }
   }
 
   &__text-container {
     width: 50%;
     max-width: 485px;
+
+    @include a.m-media(sm) {
+      width: 100%;
+      max-width: none;
+    }
 
     &--centered {
       display: flex;
@@ -108,6 +129,11 @@ $wrapper-width: 81%;
     line-height: 1.1;
     letter-spacing: -2px;
     text-transform: capitalize;
+
+    @include a.m-media(sm) {
+      max-width: none;
+      font-size: 4.6rem;
+    }
   }
 
   &__wrapper {
@@ -116,5 +142,9 @@ $wrapper-width: 81%;
     justify-content: center;
     width: $wrapper-width;
     margin: 0 auto;
+
+    @include a.m-media(sm) {
+      width: 95%;
+    }
   }
 }

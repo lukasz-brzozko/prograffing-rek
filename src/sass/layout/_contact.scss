@@ -34,6 +34,10 @@
     @include a.m-media(lg) {
       max-width: 420px;
     }
+
+    @include a.m-media(sm) {
+      max-width: none;
+    }
   }
 
   &__image {

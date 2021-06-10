@@ -12,6 +12,12 @@
     align-items: center;
     justify-content: center;
     max-width: 270px;
+
+    @include a.m-media(sm) {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 4em;
+    }
   }
 
   &__description {

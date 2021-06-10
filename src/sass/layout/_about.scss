@@ -6,8 +6,19 @@
 .about {
   min-height: 100vh;
 
+  &__button {
+    @include a.m-media(sm) {
+      width: 100%;
+      margin-top: 2em;
+    }
+  }
+
   &__description {
     margin-bottom: 2.5em;
+
+    @include a.m-media(sm) {
+      margin-bottom: 0;
+    }
   }
 
   &__image {
@@ -68,6 +79,22 @@
     width: 100%;
     margin-bottom: 10em;
 
+    @include a.m-media(sm) {
+      margin: 5em 0 0;
+    }
+
+    &-data {
+      @include a.m-media(sm) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &-data-wrapper {
+      @include a.m-media(sm) {
+        width: 100%;
+      }
+    }
+
     &-description {
       font-size: 1.4rem;
     }
@@ -77,6 +104,10 @@
     width: 100%;
     margin: 8em 0 2em;
 
+    @include a.m-media(sm) {
+      margin-top: 0;
+    }
+
     &-description {
       line-height: 2;
     }
@@ -84,6 +115,10 @@
     &-list {
       justify-content: space-between;
       margin-top: 7em;
+
+      @include a.m-media(sm) {
+        flex-wrap: wrap;
+      }
     }
 
     &-title {
@@ -116,6 +151,11 @@
       @include a.m-media(lg) {
         max-width: 170px;
       }
+
+      @include a.m-media(sm) {
+        align-items: center;
+        max-width: none;
+      }
     }
   }
 
@@ -130,10 +170,19 @@
   &__text-container {
     width: 41%;
     max-width: 600px;
+
+    @include a.m-media(sm) {
+      width: 100%;
+      max-width: none;
+    }
   }
 
   &__title {
     max-width: 400px;
+
+    @include a.m-media(sm) {
+      max-width: none;
+    }
   }
 
   &__wrapper {

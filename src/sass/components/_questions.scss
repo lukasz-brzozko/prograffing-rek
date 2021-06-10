@@ -19,6 +19,13 @@
     line-height: 2 !important;
     background-color: a.$c-light;
     border-radius: 24px;
+
+    @include a.m-media(sm) {
+      width: 98%;
+      margin: 0 auto 2em !important;
+      padding: 2em 1em !important;
+      text-align: justify;
+    }
   }
 
   &__summary {

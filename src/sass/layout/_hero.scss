@@ -9,13 +9,19 @@
   min-height: auto;
   color: a.$c-text-primary;
 
+  @include a.m-media(sm) {
+    height: 100vh;
+  }
+
+  &__button {
+    @include a.m-media(sm) {
+      width: 100%;
+    }
+  }
+
   &__description,
   &__headline {
     color: a.$c-headline-primary-lighter;
-  }
-
-  &__title {
-    font-size: 7.2rem;
   }
 
   &__image {
@@ -70,6 +76,14 @@
 
     &-prev {
       left: 3% !important;
+    }
+  }
+
+  &__title {
+    font-size: 7.2rem;
+
+    @include a.m-media(sm) {
+      font-size: 5rem;
     }
   }
 }

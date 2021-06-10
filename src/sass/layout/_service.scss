@@ -2,9 +2,14 @@
 @use '../abstracts/mixins' as m;
 @use '../abstracts/typography' as t;
 @use '../abstracts/variables' as v;
+@use '../abstracts' as a;
 
 .service {
   padding-bottom: 20em;
+
+  &__cover-content {
+    margin-top: 2em;
+  }
 
   &__predescription,
   &__title {
@@ -69,6 +74,10 @@
     padding-right: 0;
     padding-left: 0;
     font-size: 2rem;
+
+    @include a.m-media(sm) {
+      margin: 0 auto 3em;
+    }
 
     &::after {
       width: 100%;

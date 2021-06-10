@@ -9,6 +9,18 @@
 
 html {
   font-size: 10px;
+
+  @include a.m-media(lg) {
+    font-size: 9px;
+  }
+
+  @include a.m-media(md) {
+    font-size: 8px;
+  }
+
+  @include a.m-media(sm) {
+    font-size: 9px;
+  }
 }
 
 body {

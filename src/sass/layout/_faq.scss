@@ -3,6 +3,12 @@
 .faq {
   background-color: a.$c-primary;
 
+  &__description {
+    @include a.m-media(sm) {
+      text-align: center;
+    }
+  }
+
   &__text-container {
     max-width: 570px;
     margin-top: 15em;
