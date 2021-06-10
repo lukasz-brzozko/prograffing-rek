@@ -59,6 +59,12 @@
   }
 
   &__more-link {
+    padding-right: 0;
+    padding-left: 0;
     font-size: 2rem;
+
+    &::after {
+      width: 100%;
+    }
   }
 }

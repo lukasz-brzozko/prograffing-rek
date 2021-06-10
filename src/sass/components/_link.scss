@@ -1,6 +1,41 @@
-@use '../abstracts/colors' as c;
+@use '../abstracts' as a;
 
 .link {
-  color: c.$text-primary;
+  color: a.$c-text-primary;
   text-decoration: none;
+
+  &--underlined {
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding: 0.8em 1em;
+    font-size: 1.6rem;
+
+    &::after {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      display: block;
+      width: calc(100% - 2em);
+      height: 3px;
+      background-color: a.$c-tertiary;
+      border-radius: 10px;
+      transform: translateX(-50%) rotateY(90deg);
+      transform-origin: 0% 50%;
+      transition: transform 0.3s ease;
+      content: '';
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(-50%) rotateY(0deg);
+      }
+    }
+  }
+
+  &--alternate {
+    &::after {
+      background-color: a.$c-quaternary;
+    }
+  }
 }
