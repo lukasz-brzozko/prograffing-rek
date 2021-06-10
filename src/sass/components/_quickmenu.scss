@@ -1,0 +1,69 @@
+@use '../abstracts' as a;
+
+$font-size: 16px;
+$close-button-color: a.$c-tertiary;
+
+$menu-breakpoints: (
+  tablet: map-get(a.$m-breakpoints, sm),
+  desktop: map-get(a.$m-breakpoints, md)
+) !default;
+
+$theme: (
+  menu-btn-bg: rgba(0, 0, 0, 0.5),
+  menu-btn-color: #fff,
+  menu-bg: a.$c-primary,
+  menu-color: a.$c-headline-primary-lighter,
+  menu-head-icon-bg: transparent,
+  menu-head-icon-color: #fff,
+  menu-head-title-color: adjust-color($color: a.$c-headline-primary-lighter, $alpha: 0.3),
+  divider-color: a.$c-text-secondary-lighter,
+  nav-item-bg: transparent,
+  nav-item-border: 1px solid,
+  nav-item-color:  a.$c-text-primary,
+  close-button-bg: a.$c-tertiary,
+  close-button-color: a.$c-text-primary,
+);
+
+$themes: (
+  light: $theme,
+  dark: $theme
+);
+
+.quick-menu {
+  display: none !important;
+  height: 100%;
+  font-size: $font-size;
+
+  @include a.m-media(sm) {
+    display: flex !important;
+  }
+
+  &.navigation {
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      padding: 30px 10px;
+      font-size: $font-size;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .link {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      border-color: a.$c-text-primary-lighter !important;
+    }
+  }
+}
+
+.qm-logo {
+  max-width: 80px;
+}
+
+@import 'node_modules/quickmenu/src/scss/quickmenu';
