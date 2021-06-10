@@ -13,28 +13,22 @@
 
 <body>
   <header class="header">
-    <div class="header__logo logo">
-      <a href="#" class="logo__link">
-        <svg width="80" height="26" viewBox="0 0 80 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6.77344 7.07422H15.7578V26H6.77344V7.07422ZM0.015625 0.0820312H22.5156V5.72656H0.015625V0.0820312ZM24.8164 26V0.0820312H33.4492V26H24.8164ZM34.8164 5.25781V0.0820312H44.6797L49.875 5.25781V13.0312L45.8906 17.0156L45.6172 16.4688L37.5117 17.543L37.8242 18.2266H34.8164V13.207H41.3008V5.25781H34.8164ZM50.7539 26H41.5352L37.8242 18.2266H44.6797L45.8906 17.0156L50.7539 26ZM69.8516 23.168H61.375L63.1719 18.0312H67.8594L60.9258 0.0820312H69.3438L79.6758 26H70.9453L69.8516 23.168ZM59.0703 26H50.7305L59.9883 1.25391L63.8164 11.5469L59.0703 26Z"
-            fill="white" />
-        </svg>
-      </a>
-    </div>
+    <a href="#" class="header__logo logo">
+      <img class="header__logo-image logo__image" src="./assets/svg/LOGO.svg" alt="TRA logo">
+    </a>
     <nav class="header__navigation navigation">
       <ul class="navigation__list list">
         <li class="navigation__element">
-          <a href="#about" class="navigation__link link">About</a>
+          <a href="#about" class="navigation__link link link--underlined">About</a>
         </li>
         <li class="navigation__element">
-          <a href="#service" class="navigation__link link">Services</a>
+          <a href="#service" class="navigation__link link link--underlined">Services</a>
         </li>
         <li class="navigation__element">
-          <a href="#pricing" class="navigation__link link">Pricing</a>
+          <a href="#pricing" class="navigation__link link link--underlined">Pricing</a>
         </li>
         <li class="navigation__element">
-          <a href="#" class="navigation__link link">Blog</a>
+          <a href="#" class="navigation__link link link--underlined">Blog</a>
         </li>
       </ul>
     </nav>
@@ -216,7 +210,7 @@
           </ul>
         </div>
         <span class="about__more section__description description">Want to know more? <a href="#"
-            class="about__more-link link">Learn More</a></span>
+            class="about__more-link link link--underlined link--alternate">Learn More</a></span>
       </div>
     </section>
     <section class="section section__service service" id="service">
@@ -230,7 +224,7 @@
             <p class="service__description section__description description">There is only one difference between
               transport and transportation, that is transport is for public to move one place to another and
               transportation is moving anything like goods is used.</p>
-            <a href="#" class="service__more-link link">Learn More</a>
+            <a href="#" class="service__more-link link link--underlined">Learn More</a>
           </div>
           <div class="service__picture-container section__picture-container picture-container">
             <img class="service__image service__image--delivery picture-container__image image"
@@ -493,7 +487,8 @@
                   <a href="#" class="contact__address-link link">
                     <svg class="contact__address-element-image address_element-image" width="48" height="48"
                       viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="contact__address-element-image-path" cx="24" cy="24" r="23.5" fill="transparent" stroke="white" stroke-opacity="0.295743" />
+                      <circle class="contact__address-element-image-path" cx="24" cy="24" r="23.5" fill="transparent"
+                        stroke="white" stroke-opacity="0.295743" />
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M31.6844 16.0605C31.5233 15.9798 31.3336 15.9798 31.1725 16.0605L16.3158 23.4889C16.0336 23.6301 15.9193 23.9734 16.0605 24.2556C16.1409 24.4162 16.2922 24.5297 16.4689 24.562L22.3653 25.6345L23.4378 31.5309C23.4817 31.7726 23.6753 31.9592 23.9184 31.9943C23.9453 31.9982 23.9724 32.0001 23.9995 32C24.2161 32.0001 24.4141 31.8778 24.5109 31.684L31.9393 16.8274C32.0807 16.5452 31.9666 16.2019 31.6844 16.0605Z"
                         fill="white" />
@@ -506,7 +501,8 @@
                   <a href="tel:+1 (2345) 678-90-12" class="contact__address-link link">
                     <svg class="contact__address-element-image address_element-image" width="48" height="48"
                       viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="contact__address-element-image-path" cx="24" cy="24" r="23.5" fill="transparent" stroke="white" stroke-opacity="0.295743" />
+                      <circle class="contact__address-element-image-path" cx="24" cy="24" r="23.5" fill="transparent"
+                        stroke="white" stroke-opacity="0.295743" />
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M31.5804 27.7424L29.3429 25.5095C28.5438 24.7121 27.1853 25.0311 26.8656 26.0677C26.6259 26.7855 25.8267 27.1842 25.1075 27.0247C23.5093 26.626 21.3517 24.5526 20.9521 22.878C20.7124 22.1602 21.1918 21.3628 21.911 21.1236C22.9499 20.8046 23.2696 19.4489 22.4704 18.6515L20.2329 16.4187C19.5936 15.8604 18.6346 15.8604 18.0752 16.4187L16.5569 17.9338C15.0386 19.5287 16.7167 23.7552 20.4726 27.5031C24.2285 31.2511 28.4639 33.0055 30.0621 31.4106L31.5804 29.8955C32.1399 29.2575 32.1399 28.3006 31.5804 27.7424Z"
                         fill="white" />
@@ -518,7 +514,8 @@
                   <a href="mailto:info@transport.com" class="contact__address-link link">
                     <svg class="contact__address-element-image address_element-image" width="48" height="48"
                       viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="contact__address-element-image-path" cx="24" cy="24" r="23.5" fill="transparent" stroke="white" stroke-opacity="0.295743" />
+                      <circle class="contact__address-element-image-path" cx="24" cy="24" r="23.5" fill="transparent"
+                        stroke="white" stroke-opacity="0.295743" />
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M24.4628 26.0578C24.3117 26.154 24.1417 26.1925 23.9906 26.1925C23.8394 26.1925 23.6694 26.154 23.5183 26.0578L16 21.3848V27.5963C16 28.9232 17.0579 30.0002 18.3613 30.0002H29.6387C30.9421 30.0002 32 28.9232 32 27.5963V21.3848L24.4628 26.0578Z"
                         fill="white" />
@@ -552,14 +549,112 @@
             freight transport. It is generally used to transport heavy products.</p>
         </div>
         <button class="get-started__button button button--alternate button--wide">Get started</button>
-        <svg class="get-started__image get-started__image--track-two image picture-container__image image" width="1392" height="400" viewBox="0 0 1392 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="get-started__image-path" d="M460.938 -87.1016C687.818 -31.5971 613.446 120.031 784 120.031C962.977 120.031 932.213 -15.4089 1160 -87.1016C1261.27 -118.975 1419.85 -135.237 1442.12 -87.1016C1560.91 169.647 1533.2 372.895 1442.12 522.667C1408.64 577.72 1339.56 332.877 1193 322.547C1059.5 313.137 1100.39 455.249 882 483.188C472.551 535.569 127.034 597.713 -62.6758 483.188C-345.304 312.569 -253.49 120.722 -62.6758 -87.1016C8.31693 -164.423 264.48 -135.163 460.938 -87.1016Z" stroke="#8DBAFF" stroke-width="2" stroke-linecap="round" stroke-dasharray="10"/>
-          <circle cx="789" cy="120" r="6" fill="#ED7171"/>
-          <circle cx="1179" cy="322" r="6" fill="#A3C8FF"/>
-          </svg>
+        <svg class="get-started__image get-started__image--track-two image picture-container__image image" width="1392"
+          height="400" viewBox="0 0 1392 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="get-started__image-path"
+            d="M460.938 -87.1016C687.818 -31.5971 613.446 120.031 784 120.031C962.977 120.031 932.213 -15.4089 1160 -87.1016C1261.27 -118.975 1419.85 -135.237 1442.12 -87.1016C1560.91 169.647 1533.2 372.895 1442.12 522.667C1408.64 577.72 1339.56 332.877 1193 322.547C1059.5 313.137 1100.39 455.249 882 483.188C472.551 535.569 127.034 597.713 -62.6758 483.188C-345.304 312.569 -253.49 120.722 -62.6758 -87.1016C8.31693 -164.423 264.48 -135.163 460.938 -87.1016Z"
+            stroke="#8DBAFF" stroke-width="2" stroke-linecap="round" stroke-dasharray="10" />
+          <circle cx="789" cy="120" r="6" fill="#ED7171" />
+          <circle cx="1179" cy="322" r="6" fill="#A3C8FF" />
+        </svg>
       </aside>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a href="#" class="footer__logo logo">
+        <img class="footer__logo-image logo__image" src="./assets/svg/LOGO.svg" alt="TRA logo">
+      </a>
+      <div class="footer__sitemap sitemap">
+        <nav class="footer__sitemap-menu sitemap__menu menu">
+          <h6 class="footer__headline section__headline headline">Menu</h6>
+          <ul class="footer__sitemap-list sitemap__menu-list menu__list">
+            <li class="footer__sitemap-item sitemap__menu-item menu__item">
+              <a href="#about" class="footer__sitemap-link sitemap__link menu__link link link--underlined">About</a>
+            </li>
+            <li class="footer__sitemap-item sitemap__menu-item menu__item">
+              <a href="#pricing" class="footer__sitemap-link sitemap__link menu__link link link--underlined">Pricing</a>
+            </li>
+            <li class="footer__sitemap-item sitemap__menu-item menu__item">
+              <a href="#" class="footer__sitemap-link sitemap__link menu__link link link--underlined">Blog</a>
+            </li>
+            <li class="footer__sitemap-item sitemap__menu-item menu__item">
+              <a href="#contact" class="footer__sitemap-link sitemap__link menu__link link link--underlined">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__sitemap sitemap sitemap--outer">
+        <nav class="footer__sitemap-menu sitemap__menu menu">
+          <h6 class="footer__headline section__headline headline">Service</h6>
+          <ul class="footer__sitemap-list sitemap__menu-list menu__list">
+            <li class="footer__sitemap-item sitemap__menu-item menu__item">
+              <a href="#" class="footer__sitemap-link sitemap__link menu__link link link--underlined">Land Express</a>
+            </li>
+            <li class="footer__sitemap-item sitemap__menu-item menu__item">
+              <a href="#" class="footer__sitemap-link sitemap__link menu__link link link--underlined">Air Freight</a>
+            </li>
+            <li class="footer__sitemap-item sitemap__menu-item menu__item">
+              <a href="#" class="footer__sitemap-link sitemap__link menu__link link link--underlined">Ocean Freight</a>
+            </li>
+            <li class="footer__sitemap-item sitemap__menu-item menu__item">
+              <a href="#" class="footer__sitemap-link sitemap__link menu__link link link--underlined">See All</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="footer__social-media social-media">
+        <li class="footer__social-media-item social-media__item">
+          <a class="footer__social-media-link footer__social-media-link--facebook social-media__link"
+            href="https://www.facebook.com/">
+            <svg class="footer__social-media-image social-media__image" width="48" height="48" viewBox="0 0 48 48"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="footer__social-media-image-path social-media__image-path" cx="24" cy="24" r="24"
+                fill="#0666F6" />
+              <path
+                d="M21.6667 21.3333H19V24H21.6667V32H25.6667V24H28.0933L28.3333 21.3333H25.6667V20.2227C25.6667 19.5853 25.7947 19.3333 26.4107 19.3333H28.3333V16H25.128C22.7307 16 21.6667 17.056 21.6667 19.0773V21.3333Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-media-item social-media__item">
+          <a class="footer__social-media-link footer__social-media-link--twitter social-media__link"
+            href="https://twitter.com/">
+            <svg class="footer__social-media-image social-media__image" width="48" height="48" viewBox="0 0 48 48"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="footer__social-media-image-path social-media__image-path" cx="24" cy="24" r="24"
+                fill="#0666F6" />
+              <path
+                d="M32 19.54C31.412 19.8013 30.7787 19.9773 30.1147 20.0573C30.7933 19.6507 31.312 19.008 31.5587 18.2413C30.924 18.6173 30.2213 18.8907 29.4733 19.0373C28.876 18.3987 28.0213 18 27.0787 18C24.9587 18 23.4013 19.9773 23.88 22.0307C21.1533 21.8933 18.7333 20.5867 17.1147 18.6013C16.2547 20.076 16.6693 22.0067 18.1307 22.984C17.5933 22.9667 17.088 22.8187 16.6453 22.5733C16.6093 24.0933 17.7 25.516 19.2787 25.8333C18.8173 25.9587 18.3107 25.988 17.796 25.8893C18.2133 27.1933 19.428 28.1413 20.8627 28.168C19.48 29.2507 17.7427 29.7347 16 29.5293C17.4533 30.4613 19.1773 31.004 21.0307 31.004C27.1267 31.004 30.5693 25.856 30.3613 21.2387C31.004 20.7773 31.56 20.1987 32 19.54V19.54Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-media-item social-media__item">
+          <a class="footer__social-media-link footer__social-media-link--facebook social-media__link"
+            href="https://www.instagram.com/">
+            <svg class="footer__social-media-image social-media__image" width="48" height="48" viewBox="0 0 48 48"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle class="footer__social-media-image-path social-media__image-path" cx="24" cy="24" r="24"
+                fill="#0666F6" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 16C21.8267 16 21.556 16.0093 20.7013 16.0493C17.7947 16.1827 16.1813 17.7947 16.048 20.7013C16.0093 21.556 16 21.828 16 24C16 26.1733 16.0093 26.4453 16.048 27.2987C16.1813 30.204 17.7947 31.8187 20.7013 31.952C21.556 31.9907 21.8267 32 24 32C26.1733 32 26.4453 31.9907 27.3 31.952C30.2013 31.8187 31.8213 30.2067 31.952 27.2987C31.9907 26.4453 32 26.1733 32 24C32 21.828 31.9907 21.556 31.952 20.7013C31.8213 17.7987 30.2067 16.1813 27.3 16.0493C26.4453 16.0093 26.1733 16 24 16ZM24 17.4427C26.136 17.4427 26.3893 17.4507 27.2333 17.4893C29.4027 17.588 30.4133 18.616 30.5133 20.768C30.5507 21.612 30.5587 21.864 30.5587 24C30.5587 26.136 30.5507 26.3893 30.5133 27.232C30.4133 29.3827 29.404 30.4133 27.2333 30.512C26.3893 30.5493 26.1373 30.5587 24 30.5587C21.864 30.5587 21.6107 30.5507 20.768 30.512C18.5947 30.412 17.588 29.38 17.488 27.232C17.4507 26.3893 17.4413 26.136 17.4413 24C17.4413 21.864 17.4507 21.6107 17.488 20.768C17.5867 18.6147 18.5973 17.5867 20.768 17.488C21.6107 17.4493 21.864 17.4427 24 17.4427ZM19.892 24C19.892 21.7307 21.732 19.892 24 19.892C26.268 19.892 28.108 21.732 28.108 24C28.108 26.2693 26.268 28.108 24 28.108C21.732 28.108 19.892 26.2693 19.892 24ZM24 26.6667C22.5267 26.6667 21.3333 25.4733 21.3333 24C21.3333 22.528 22.5267 21.3333 24 21.3333C25.472 21.3333 26.668 22.5267 26.668 24C26.668 25.4733 25.472 26.6667 24 26.6667ZM27.3093 19.7307C27.3093 19.2 27.74 18.7707 28.2693 18.7707C28.8013 18.7707 29.2307 19.2 29.2307 19.7307C29.2307 20.2613 28.8 20.6907 28.2693 20.6907C27.7387 20.6907 27.3093 20.26 27.3093 19.7307Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <hr class="footer__hr hr">
+    <div class="footer__wrapper">
+      <small class="footer__copyright copyright">Copyright © 2021 Laaqiq. All Rights Reserved.</small>
+      <div class="footer__policy policy">
+        <a href="#" class="footer__policy-link policy__link link link--underlined">Terms of Use</a>
+        <a href="#" class="footer__policy-link policy__link link link--underlined">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
