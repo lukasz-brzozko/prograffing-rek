@@ -14,6 +14,8 @@ $border-radius: 32px;
 
   &__image {
     &--track-one {
+      width: 100%;
+      max-width: 521px;
       transform: translate(-54%, -52%);
     }
   }
@@ -27,7 +29,7 @@ $border-radius: 32px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40vw;
+    width: 93%;
     min-width: 350px;
     max-width: 500px;
     max-height: 385px;
@@ -95,17 +97,17 @@ $border-radius: 32px;
 
   &__picture-container {
     &::before {
-      width: 20vw;
+      width: 19vw;
       max-width: 250px;
-      height: 20vw;
+      height: 19vw;
       max-height: 250px;
       transform: translate(-115%, -101%);
     }
 
     &::after {
-      width: 30vw;
+      width: 26vw;
       max-width: 350px;
-      height: 30vw;
+      height: 26vw;
       max-height: 350px;
       transform: translate(-13%, -17%);
       content: '';

@@ -19,28 +19,40 @@
   }
 
   &__image {
+    width: 40%;
+    max-width: 314px;
+    max-height: 250px;
+
     &--letters {
       z-index: 1;
+      width: 48%;
+      max-width: 249px;
       transform: translate(-125%, 57%);
     }
 
     &--package {
       z-index: 3;
+      width: 34%;
+      max-width: 177px;
       transform: translate(50%, -156%);
     }
 
     &--track-one {
+      width: 41%;
+      max-width: 212px;
       transform: translate(54%, 26%);
     }
 
     &--vehicle {
       z-index: 1;
+      width: 32%;
+      max-width: 166px;
       transform: translate(-162%, -135%);
     }
 
     &--vehicle-img {
       z-index: 2;
-      width: 70%;
+      width: 61%;
       max-width: 315px;
       transform: translate(-50%, -50%);
     }
