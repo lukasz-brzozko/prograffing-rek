@@ -30,6 +30,10 @@
   &__description {
     color: a.$c-text-primary;
     font-size: 2rem;
+
+    @include a.m-media(lg) {
+      max-width: 420px;
+    }
   }
 
   &__image {
@@ -37,6 +41,10 @@
       width: 42vw;
       max-width: 570px;
       transform: translate(-50%, -50%);
+
+      @include a.m-media(lg) {
+        max-width: 500px;
+      }
     }
 
     &--marker {

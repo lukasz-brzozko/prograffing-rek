@@ -1,7 +1,12 @@
+@use '../abstracts' as a;
+
 .picture-container {
   position: relative;
   width: 50%;
-  height: 500px;
+
+  @include a.m-media(lg) {
+    width: 40%;
+  }
 
   &__image {
     position: absolute;

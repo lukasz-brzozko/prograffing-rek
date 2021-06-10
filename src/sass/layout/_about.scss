@@ -1,6 +1,7 @@
 @use '../abstracts/colors' as c;
 @use '../abstracts/mixins' as m;
 @use '../abstracts/typography' as t;
+@use '../abstracts' as a;
 
 .about {
   min-height: 100vh;
@@ -111,6 +112,10 @@
 
     &-wrapper {
       align-items: flex-start;
+
+      @include a.m-media(lg) {
+        max-width: 170px;
+      }
     }
   }
 

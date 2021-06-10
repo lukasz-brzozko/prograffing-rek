@@ -22,6 +22,10 @@ $width: 98%;
 
   &__description {
     margin-bottom: 0;
+
+    @include a.m-media(lg) {
+      width: 90%;
+    }
   }
 
   &__image {
@@ -32,6 +36,10 @@ $width: 98%;
     width: 55vw;
     max-width: 714px;
     transform: translate(0, -50%);
+
+    @include a.m-media(lg) {
+      right: -1%;
+    }
 
     &-path {
       transition: stroke-dashoffset 0.3s ease;
