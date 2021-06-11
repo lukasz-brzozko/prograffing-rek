@@ -34,6 +34,11 @@ $width: 98%;
     @include a.m-media(lg) {
       width: 90%;
     }
+
+    @include a.m-media(sm) {
+      width: 100%;
+      text-align: justify;
+    }
   }
 
   &__image {
