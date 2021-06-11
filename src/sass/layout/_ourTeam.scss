@@ -13,6 +13,9 @@ $multiplier: 0.9;
   }
 
   &__figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 60%;
     max-width: 900px;
     margin-left: 6vw;
@@ -89,8 +92,21 @@ $multiplier: 0.9;
   }
 
   &__swiper-button {
-    &-next {
+    &-next.swiper-button-next {
       transform: translateX(120%);
+
+      @include a.m-media(sm) {
+        right: 3vw;
+        left: auto;
+        transform: translateX(0);
+      }
+    }
+
+    &-prev.swiper-button-prev {
+      @include a.m-media(sm) {
+        right: auto;
+        left: 3vw;
+      }
     }
 
     &-next,
@@ -99,6 +115,11 @@ $multiplier: 0.9;
       bottom: 2.5em;
       left: calc(420px + 6vw + 10vw);
       border: solid 1px adjust-color($color: a.$c-tertiary, $alpha: -0.7);
+
+      @include a.m-media(sm) {
+        bottom: 5em;
+        transform: translateX(0);
+      }
 
       &:hover {
         background-color: a.$c-tertiary;

@@ -23,8 +23,17 @@
     border-radius: 50%;
     transition: background-color 0.2s ease;
 
+    @include a.m-media(sm) {
+      width: 30px !important;
+      height: 30px !important;
+    }
+
     &::after {
       transition: color 0.2s ease;
+
+      @include a.m-media(sm) {
+        font-size: 1rem;
+      }
     }
 
     &:hover {

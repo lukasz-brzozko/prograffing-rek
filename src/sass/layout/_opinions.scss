@@ -17,6 +17,19 @@
   &__blockquote-cite {
     color: a.$c-text-primary;
 
+    &--strong::before {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      font-size: 7.2rem;
+      transform: rotateX(0) translateY(0);
+      content: '"';
+
+      @include a.m-media(sm) {
+        font-size: 5.8rem;
+      }
+    }
+
     &--strong {
       position: relative;
       font-weight: normal;
@@ -27,15 +40,6 @@
       @include a.m-media(sm) {
         font-size: 2.6rem;
         text-align: justify;
-      }
-
-      &::before {
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        font-size: 7.2rem;
-        transform: rotateX(0) translateY(0);
-        content: '"';
       }
 
       &:hover::before {

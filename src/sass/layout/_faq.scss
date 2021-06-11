@@ -35,6 +35,10 @@
     cursor: pointer;
     user-select: none;
 
+    @include a.m-media(sm) {
+      width: 100vw;
+    }
+
     &:hover {
       filter: brightness(50%);
     }
