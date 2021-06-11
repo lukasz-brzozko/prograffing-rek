@@ -33,6 +33,7 @@
     max-height: 60px;
     object-fit: scale-down;
     cursor: pointer;
+    transition: filter 0.2s ease;
     user-select: none;
 
     @include a.m-media(sm) {

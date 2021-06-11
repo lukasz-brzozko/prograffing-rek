@@ -1,7 +1,3 @@
-@use '../abstracts/colors' as c;
-@use '../abstracts/mixins' as m;
-@use '../abstracts/typography' as t;
-@use '../abstracts/variables' as v;
 @use '../abstracts' as a;
 
 .service {
@@ -13,7 +9,7 @@
 
   &__predescription,
   &__title {
-    color: c.$text-primary;
+    color: a.$c-text-primary;
   }
 
   &__image {
@@ -29,7 +25,7 @@
       height: 20vw;
       max-height: 270px;
       padding: 0 2em;
-      background-color: c.$quaternary;
+      background-color: a.$c-quaternary;
       border-radius: 10%;
       transform: translate(-69%, -42%);
     }

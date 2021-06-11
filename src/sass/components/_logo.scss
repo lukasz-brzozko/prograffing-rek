@@ -1,7 +1,7 @@
-@use '../abstracts/mixins' as m;
+@use '../abstracts' as a;
 
 .logo {
-  @include m.hover-effect;
+  @include a.m-hover-effect;
 
   &__image {
     max-width: 80px;
