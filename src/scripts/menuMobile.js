@@ -1,5 +1,5 @@
 import QuickMenu from 'quickmenu';
 
-// import 'quickmenu/dist/css/quickmenu.min.css';
+const quickmenu = new QuickMenu();
 
-new QuickMenu();
+export default quickmenu;
