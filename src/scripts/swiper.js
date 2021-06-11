@@ -19,31 +19,57 @@ const heroSwiper = new SwiperCore('.hero__swiper-container', {
 });
 
 const teamSwiper = new SwiperCore('.our-team__swiper-container', {
-  slideClass: 'our-team__swiper-slide',
-  loop: true,
-  speed: 500,
-  noSwipingSelector: '.our-team__swiper-container',
-  noSwiping: true,
+  breakpoints: {
+    320: {
+      autoplay: {
+        delay: 1,
+      },
+      noSwiping: false,
+      speed: 250,
+    },
+
+    960: {
+      autoplay: false,
+      noSwiping: true,
+      noSwipingClass: 'our-team__swiper-container',
+      speed: 500,
+    },
+  },
   effect: 'fade',
   fadeEffect: { crossFade: true },
+  loop: true,
   navigation: {
     nextEl: '.our-team__swiper-button-next',
     prevEl: '.our-team__swiper-button-prev',
   },
+  noSwipingSelector: '.our-team__swiper-container',
+  slideClass: 'our-team__swiper-slide',
   spaceBetween: 0,
 });
 
 const faqSwiper = new SwiperCore('.faq__swiper-container', {
-  slideClass: 'faq__swiper-slide',
-  noSwiping: true,
-  noSwipingClass: 'faq__swiper-container',
+  breakpoints: {
+    320: {
+      noSwiping: false,
+      slidesPerView: 1,
+    },
+
+    960: {
+      noSwiping: true,
+      noSwipingClass: 'faq__swiper-container',
+      slidesPerView: 4,
+    },
+  },
   loop: true,
   navigation: {
     nextEl: '.faq__swiper-button-next',
     prevEl: '.faq__swiper-button-prev',
   },
-  slidesPerView: 4,
-
+  slideClass: 'faq__swiper-slide',
 });
 
-console.log(heroSwiper, teamSwiper, faqSwiper);
+export default {
+  heroSwiper,
+  teamSwiper,
+  faqSwiper,
+};
